@@ -21,6 +21,7 @@ pipeline {
      stage ('deploy') {
        steps {
          echo 'deployment done'
+         echo ' testing '
        }
      }
      stage ('notify build result') {
