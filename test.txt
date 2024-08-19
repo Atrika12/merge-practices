@@ -8,11 +8,7 @@ pipe line{
       echo 'helloworld'
        }
      }
-     stage ('build') {
-       steps {
-         echo "build done"
-     }
-  }
+     
   
 
 
