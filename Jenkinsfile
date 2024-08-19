@@ -23,5 +23,10 @@ pipeline {
          echo 'deployment done'
        }
      }
+     stage ('notify build result') {
+       steps {
+         echo 'the job is successed'
+       }
+     }
    }
 }
