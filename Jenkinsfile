@@ -11,6 +11,7 @@ pipeline {
      stage ('build') {
        steps {
          echo "build done"
+         echo 'twist'
        }
      }
      stage ('test') {
@@ -27,6 +28,10 @@ pipeline {
      stage ('notify build result') {
        steps {
          echo 'the job is successed'
+         stage ('deploy') {
+       steps {
+         echo 'deployment done'
+         echo ' deployment complete '
        }
      }
    }
