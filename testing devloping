@@ -1,0 +1,10 @@
+pipe line{
+  agent any {
+
+   stages{
+    steps{'hello'}{
+
+        steps {
+         echo 'helloworld'
+       }
+     }
