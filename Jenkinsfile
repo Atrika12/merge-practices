@@ -6,6 +6,7 @@ pipeline {
         DOCKER_IMAGE = "your-docker-registry/your-app-name"
         KUBERNETES_NAMESPACE = "your-namespace"
         KUBERNETES_DEPLOYMENT_NAME = "your-deployment-name"
+        KUBERNETES_DEPLOYMENT_NAME = "your-deployment-name"
     }
 
     stages {
@@ -68,9 +69,3 @@ pipeline {
         success {
             echo 'Deployment was successful!'
         }
-        failure {
-            echo 'Deployment failed!'
-        }
-    }
-}
-
